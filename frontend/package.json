@@ -1,0 +1,21 @@
+{
+  "name": "avenue-frontend",
+  "version": "1.0.0",
+  "description": "To make it easy for you to get started with GitLab, here's a list of recommended next steps.",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@gitlab.fdmci.hva.nl/ad-software-development-2223/semester-1-102/front-end-avenue-girls/avenue-frontend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tsc": "^2.0.4",
+    "typescript": "^4.9.3"
+  }
+}

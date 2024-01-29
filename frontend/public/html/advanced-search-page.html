@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Searchbox Test</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/advancedsearch.css">
+</head>
+
+<body>
+    <section id="navBarSection"></section>
+
+    <form id="searchSectionAdvanced" action="javascript:void(0);"><input type="text" id="searchFieldAdvanced"><button
+            type="submit" id="searchButtonAdvanced">Search</button><a id="searchClear"
+            onclick="document.getElementById('searchFieldAdvanced').value = ''; searchFunction()">x</a>
+        <section id="SearchlistSection">
+        </section>
+        </section>
+    </form>
+
+</body>
+<script src="../../build/userclasses/user.js"></script>
+<script src="../../build/productclass/class-product.js"></script>
+<script src="../../build/storage-handling/storage-handler.js"></script>
+<script src="../../build/sitewide-functions/sitewide-functions.js"></script>
+
+<script src="../../build/searchbox-functionality/searchbox.js"></script>
+
+</html>

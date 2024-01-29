@@ -1,0 +1,381 @@
+/* ----------- SITEWIDE ----------- */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: rgb(242, 242, 242);
+    color: #3d378c;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.pageTitle {
+    color: #312d65;
+    font-size: 65px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* BUTTON SMALL */
+.buttonSmall {
+    border: 2px solid #312d65;
+    text-decoration: none;
+    color: white;
+    background-color: #726DA8;
+    padding: 8px;
+    margin-right: 8px;
+    border-radius: 5px;
+    transition-duration: .08s;
+}
+
+.buttonSmall:hover {
+    cursor: pointer;
+    background-color: #afaaea;
+}
+
+.buttonSmall:active {
+    background-color: white;
+    color: #726DA8;
+}
+
+/* BUTTON SUBMIT */
+.buttonSubmit {
+    border: 2px solid #312d65;
+    color: white;
+    background-color: #726DA8;
+    box-sizing: border-box;
+    font-size: x-large;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 2vh;
+    width: 30vw;
+    transition: ease-in-out;
+    transition-duration: .08s;
+}
+
+.buttonSubmit:hover {
+    cursor: pointer;
+    background-color: #afaaea;
+}
+
+.buttonSubmit:active {
+    background-color: white;
+    color: #726DA8;
+}
+
+/* BUTTON OK */
+.buttonOk {
+    background-color: rgb(166, 255, 166);
+    border-color: rgb(0, 109, 0);
+    color: rgb(0, 75, 0);
+    border-radius: 5px;
+    transition: ease-in-out;
+    transition-duration: .08s;
+}
+
+.buttonOk:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    scale: 1.1;
+}
+
+.buttonOk:active {
+    color: rgb(166, 255, 166);
+    background-color: rgb(0, 109, 0);
+    opacity: 1;
+}
+
+/* BUTTON DELETE/ERROR/ETC */
+.buttonDelete {
+    background-color: rgb(255, 128, 128);
+    border-color: rgb(125, 25, 30);
+    color: rgb(125, 25, 30);
+    border-radius: 5px;
+    transition: ease-in-out;
+    transition-duration: .08s;
+}
+
+.buttonDelete:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    scale: 1.1;
+}
+
+.buttonDelete:active {
+    color: rgb(255, 128, 128);
+    background-color: rgb(125, 25, 30);
+    opacity: 1;
+}
+
+/* SELECT ELEMENT */
+.selectElement {
+    border: 2px solid #312d65;
+    color: white;
+    background-color: #726DA8;
+    border-radius: 5px;
+    transition: ease-in-out;
+    transition-duration: .08s;
+}
+
+.selectElement:hover {
+    cursor: pointer;
+    background-color: #8681be;
+}
+
+/* INPUT FIELD */
+.inputField {
+    color: #7D8CC4;
+    box-sizing: border-box;
+    font-size: x-large;
+    padding: 10px;
+    border: 2px solid #726DA8;
+    border-radius: 10px;
+    margin-top: 2vh;
+    width: 30vw;
+    transition: ease-in-out;
+    transition-duration: .08s;
+}
+
+.inputField:hover {
+    cursor: text;
+    box-shadow: 0px 0px 10px 2px #7D8CC4;
+}
+
+.inputField:focus {
+    outline: 2px solid #312d65;
+    box-shadow: 0px 0px 10px 2px #7D8CC4;
+}
+
+/* FOOTER */
+#footerSection {
+    width: 100%;
+    background-color: #9b96cb;
+    border-top: 1px solid #726DA8;
+    margin-top: auto;
+}
+
+#ulFooter {
+    display: flex;
+    gap: 20px;
+}
+
+#footerAnchor {
+    color: white;
+}
+
+#footerAnchor:hover {
+    color: #312d65;
+}
+
+/* NAVIGATION BAR */
+#headerNavigationBar {
+    width: 100%;
+    background-color: #9b96cb;
+    border-bottom: 1px solid #726DA8;
+}
+
+/* NAV BAR BUTTON */
+.navButton {
+    border: 1px solid white;
+    text-decoration: none;
+    color: white;
+    background-color: #726DA8;
+    padding: 8px;
+    margin-right: 8px;
+    border-radius: 5px;
+    transition-duration: .08s;
+    white-space: nowrap;
+}
+
+.navButton:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #afaaea;
+}
+
+.navButton:active {
+    background-color: white;
+    color: #726DA8;
+}
+
+#ulNavigationBar {
+    display: flex;
+    gap: 10px;
+    margin: 0px 0px 15px;
+    padding-top: 15px;
+}
+
+#searchbar {
+    border: none;
+    margin-left: 30%;
+    width: 300px;
+    border-radius: 5px;
+    color: #7D8CC4;
+    border: 2px solid #726DA8;
+}
+
+#searchbar:hover {
+    cursor: text;
+    box-shadow: 0px 0px 10px 2px #9590d1;
+}
+
+#searchbar:focus {
+    outline: 2px solid #312d65;
+    box-shadow: 0px 0px 10px 2px #9590d1;
+}
+
+/* NOTIFICATIONS */
+.notification {
+    position: fixed;
+    left: 50%;
+    bottom: -10px;
+    transform: translate(-50%, 0);
+
+    width: fit-content;
+    max-width: 35%;
+
+    font-size: x-large;
+
+    background-color: rgba(128, 128, 128, 0.2);
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 20px;
+    padding-bottom: 30px;
+
+    text-align: center;
+
+    transition: ease-in-out;
+    transition-duration: .15s;
+}
+
+.errorNotification {
+    background-color: rgb(255, 128, 128);
+    border-color: rgb(125, 25, 30);
+    color: rgb(125, 25, 30);
+}
+
+.succesNotification {
+    background-color: rgb(166, 255, 166);
+    border-color: rgb(0, 75, 0);
+    color: rgb(0, 75, 0);
+}
+
+.hiddenNotification {
+    transform: translate(-50%, 100%);
+}
+
+
+
+
+
+
+
+/**/
+/*Quicksearch*/
+
+.resultSection {
+    background: white;
+    width: 99%;
+    top: 120%;
+    border-style: solid;
+    border-width: 1px;
+}
+
+#searchFailMessage {
+    margin-left: 35%;
+    transform: translate(35%);
+}
+
+/* Positions the search bar | Needs to be updated in live version*/
+#searchSection {
+    position: absolute;
+    /*Absolute is just a hotfix*/
+    top: 2%;
+    /*Top left positions it, remove in site integrated version*/
+    left: 70%;
+    margin-right: -30%;
+    transform: translate(-30%);
+    z-index: 1;
+    /*Without this, hover overlays it*/
+}
+
+/* Sets search bar position */
+#searchField {
+    width: 400px;
+    outline: none;
+    border: 2px solid #726DA8;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    padding: 5px;
+}
+
+/*Maybe the box only appearing on field click would be nice*/
+
+#searchButton {
+    position: relative;
+    border: 2px solid #726DA8;
+    background: whitesmoke;
+    padding: 5px;
+    left: -0.5%;
+    outline: none;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    font-family: sans-serif;
+}
+
+#searchButton:hover {
+    cursor: pointer;
+    background: white;
+}
+
+#searchButton:active {
+    cursor: pointer;
+    background: rgb(214, 223, 238);
+}
+
+
+
+
+/* Makes it so there isn't any extra space under the image */
+#searchImage {
+    vertical-align: bottom
+}
+
+/* Sets common styling for result's text */
+#searchDescription,
+#searchTitle {
+    position: absolute;
+    text-align: left;
+    line-height: 20px;
+    padding-left: 5%;
+    padding-top: 6%;
+    font-family: sans-serif;
+    font-size: 70%
+}
+
+/* Makes title stand more out and moves it up */
+#searchTitle {
+    padding-top: 1.5%;
+    font-weight: bold;
+    font-size: 100%
+}
+
+/* Styles the message for no results */
+#searchFailMessage {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 70%;
+    flex: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#resultContainment {
+    position: absolute;
+    width: 307px;
+    margin-left: 30%;
+    top: 49px;
+    left: 582px;
+}

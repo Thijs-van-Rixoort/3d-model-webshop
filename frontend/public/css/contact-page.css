@@ -1,0 +1,12 @@
+#formSection {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1vh;
+}
+
+#emailSection,
+#subjectSection,
+#messageSection {
+    display: flex;
+}

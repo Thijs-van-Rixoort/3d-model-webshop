@@ -1,0 +1,156 @@
+body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+#tableButtons {
+    position: absolute;
+    left: 28%;
+    top: 60%;
+    height: 30%;
+    width: 50%;
+    display: inline-flex;
+}
+
+/* .buttonSmall {
+    margin: 10px;
+    margin-right: 100px;
+} */
+
+#addToCart {
+    position: absolute;
+    top: 290px;
+    left: 5px;
+    width: 15%;
+    height: 5%;
+    text-align: center;
+}
+
+#deleteButton {
+    position: relative;
+    top: 18px;
+    width: 40%;
+    height: 20%;
+}
+
+#promoButton {
+    position: absolute;
+    top: 8px;
+    left: -120px;
+    margin-left: 84%;
+    margin-top: 10px;
+    width: 30%;
+    height: 20%;
+}
+
+#promoInput {
+    position: relative;
+    top: -25px;
+    left: 100px;
+    margin-left: 150px;
+    margin-bottom: 20px;
+    width: 50%;
+    height: 20%;
+}
+
+#orderButton {
+    position: relative;
+    top: 6rem;
+    left: 70%;
+    width: 40%;
+    height: 20%;
+}
+
+#cartItemTable {
+    position: relative;
+    height: 50%;
+    width: 50%;
+    top: 60px;
+    left: 390px;
+    /* border: 3px solid black; */
+}
+#cartHeader {
+   position: relative;
+   left: 400px;
+}
+
+
+ #imgProduct {
+    width: 25vmin;
+    height: 25vmin;
+    object-fit: cover;
+    border-radius: 1.6vmin;
+    border: 1px solid black;
+    box-sizing: border-box;
+    -webkit-transition: all 100ms ease-out;
+    -moz-transition: all 100ms ease-out;
+    -o-transition: all 100ms ease-out;
+    -ms-transition: all 100ms ease-out;
+    transition: all 100ms ease-out;
+    position: relative;
+    top: 0;
+    left: 1px;
+}
+
+#imgProduct:hover {
+    cursor: pointer;
+    transform: scale(0.90);
+    opacity: 0.4; 
+}
+
+#imgProduct
+
+.buttonSmall {
+    position: absolute;
+    top: 285px;
+    left: 2px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+.tableData1 {
+    font-size: x-large;
+    justify-content: center;
+    display: flex;
+    border-bottom: 5px solid black;
+}
+
+.sectionPrice {
+    position: relative;
+    top: 50px;
+}
+
+#productName {
+    position: relative;
+    top: 50px;
+    right: 183px;
+}
+
+#cartItemTable {
+    position: relative;
+    top: 50px;
+}
+
+#cartHeader {
+    position: absolute;
+    top: 70px;
+}
+
+h2 {
+    position: absolute;
+    left: 250px;
+    top: 80px;
+}
+
+#priceHeader {
+    position: fixed;
+    left: 795px;
+    top: 190px;
+}

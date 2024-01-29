@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/registerscreen.css">
+
+    <title>Login</title>
+
+</head>
+
+<body>
+    <nav id="navBarSection"></nav>
+    <header>
+        <h1 class="pageTitle">Inloggen</h1>
+    </header>
+    <form class="center registerForm" method="POST"><input type="email" name="email" id="email"
+            placeholder="e-mailadres" class="inputField">
+        <section class="formSection"><input type="password" name="password" id="password" placeholder="wachtwoord"
+                class="inputField">
+            <section class="requirementSection">
+                <h4>‎</h4>
+            </section>
+        </section><input type="button" id="loginButton" value="Login" class="buttonSubmit">
+
+    </form>
+    <section id="otherOptions" class="center"><a href="./register-user.html">Nog geen account? Registreer hier.</a></section>
+    <section id="footerSection"></section>
+
+</body>
+
+<script src="../../build/storage-handling/storage-handler.js"></script>
+<script src="../../build/sitewide-functions/sitewide-functions.js"></script>
+<script src="../../build/userclasses/user.js"></script>
+<script src="../../build/productclass/class-product.js"></script>
+<script src="../../build/login-screen/login-logic.js"></script>
+<!-- <script src="../../build/login-screen/login-verification.js"></script> -->
+
+</html>

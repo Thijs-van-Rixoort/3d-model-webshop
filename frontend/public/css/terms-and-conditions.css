@@ -1,0 +1,10 @@
+#termsAndConditionsSection {
+    align-items: center;
+}
+
+#termsAndConditions {
+    max-width: 70vw;
+    margin: 0 auto;
+    margin-bottom: 5vh;
+    text-align: left;
+}

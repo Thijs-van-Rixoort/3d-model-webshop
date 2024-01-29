@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/product-detail-page.css">
+</head>
+
+<body>
+
+    <section id="navBarSection"></section>
+
+    <a id="returnToProductOverviewButton" href="../html/product-overview.html">← Terug</a>
+    <section id="productSection">
+        <section id="productImage"></section>
+        <section id="productInfoSection">
+            <section id="nameSection"></section>
+            <section id="descriptionSection"></section>
+            <section id="productDimensionsSection">
+                <section id="dimensions">Afmetingen:</section>
+            </section>
+            <section id="filament">Filament:</section>
+            <section id="filamentSection"></section>
+            <section id="filetype">Bestandtype:</section>
+            <section id="filetypeSection"></section>
+            <section id="sellerAndPrice">Verkoper en prijs:</section>
+            <section id="sellerSection"></section>
+            <section id="priceSection"></section>
+            <section id="buttonSection">
+                <button id="addToCartButton" class="buttonSmall">Voeg toe aan winkelwagen</button>
+                <button id="addToWishlistButton" class="buttonSmall">Voeg toe aan verlanglijst</button>
+                <button id="productOnInactive" class="buttonSmall">Zet product op inactief</button>
+            </section>
+        </section>
+    </section>
+
+    <section id="footerSection"></section>
+
+</body>
+
+<script src="../../build/storage-handling/storage-handler.js"></script>
+<script src="../../build/sitewide-functions/sitewide-functions.js"></script>
+<script src="../../build/productclass/class-product.js"></script>
+<script src="../../build/product-detail-page/product-detail-logic.js"></script>
+
+</html>

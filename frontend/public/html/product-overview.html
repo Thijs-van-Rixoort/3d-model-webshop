@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/product-overview.css">
+    <link rel="stylesheet" href="../css/filterStyle.css">
+    <title>Producten</title>
+</head>
+
+<body>
+    <section id="navBarSection"></section>
+    
+    <section id="displayFlex">
+        <section id="filter">
+            <button type="button" class="collapsible" id="collapsible">Filament</button>
+            <section class="checkboxes">
+                <input type="checkbox" name="filament" value="filament 1" id="filament"><label
+                    id="filamentLabel"></label><br>
+                <input type="checkbox" name="filament" value="filament 2" id="filament"><label
+                    id="filamentLabel"></label><br>
+                <input type="checkbox" name="filament" value="filament 3" id="filament"><label
+                    id="filamentLabel"></label><br>
+                <input type="checkbox" name="filament" value="filament 3" id="filament"><label
+                    id="filamentLabel"></label><br>
+                <input type="checkbox" name="filament" value="filament 3" id="filament"><label
+                    id="filamentLabel"></label><br>
+                <input type="checkbox" name="filament" value="filament 3" id="filament"><label
+                    id="filamentLabel"></label><br>
+                <input type="checkbox" name="filament" value="filament 3" id="filament"><label
+                    id="filamentLabel"></label>
+            </section>
+
+            <button type="button" class="collapsible">Filetype</button>
+            <section class="checkboxes">
+                <input type="checkbox" name="filetype" value="filetype 1" id="filetype"><label
+                    id="fileTypeLabel"></label><br>
+                <input type="checkbox" name="filetype" value="filetype 2" id="filetype"><label
+                    id="fileTypeLabel"></label><br>
+                <input type="checkbox" name="filetype" value="filetype 3" id="filetype"><label
+                    id="fileTypeLabel"></label><br>
+                <input type="checkbox" name="filetype" value="filetype 3" id="filetype"><label
+                    id="fileTypeLabel"></label><br>
+                <input type="checkbox" name="filetype" value="filetype 3" id="filetype"><label
+                    id="fileTypeLabel"></label><br>
+                <input type="checkbox" name="filetype" value="filetype 3" id="filetype"><label
+                    id="fileTypeLabel"></label><br>
+                <input type="checkbox" name="filetype" value="filetype 3" id="filetype"><label
+                    id="fileTypeLabel"></label><br>
+                <input type="checkbox" name="filetype" value="filetype 3" id="filetype"><label
+                    id="fileTypeLabel"></label>
+            </section>
+
+            <button type="button" class="collapsible">Afmetingen</button>
+            <section class="checkboxes">
+                <input type="checkbox" name="Afmeting" value="Afmeting 1">Afmeting 1<br>
+                <input type="checkbox" name="Afmeting" value="Afmeting 2">Afmeting 2<br>
+                <input type="checkbox" name="Afmeting" value="Afmeting 3">Afmeting 3
+            </section>
+
+            <button type="button" class="collapsible">Naam van verkoper</button>
+            <section class="checkboxes">
+                <input type="checkbox" name="Verkoper" value="Verkoper 1">Verkoper 1<br>
+                <input type="checkbox" name="Verkoper" value="Verkoper 2">Verkoper 2<br>
+                <input type="checkbox" name="Verkoper" value="Verkoper 3">Verkoper 3
+                <button id="deleteFilter" class="buttonSmall">Verwijder filters</button>
+            </section>
+        </section>
+
+        <section id="products"></section>
+    </section>
+    <section id="showMoreButton"></section>
+
+    <section id="footerSection"></section>
+
+</body>
+
+<script src="../../build/storage-handling/storage-handler.js"></script>
+<script src="../../build/sitewide-functions/sitewide-functions.js"></script>
+<script src="../../build/filter/filter.js"></script>
+<script src="../../build/productclass/class-product.js"></script>
+<script src="../../build/product-overview/script-product-overview.js"></script>
+
+<script src="../../build/userclasses/user.js"></script>
+<script src="../../build/login-screen/login-verification.js"></script>
+
+</html>

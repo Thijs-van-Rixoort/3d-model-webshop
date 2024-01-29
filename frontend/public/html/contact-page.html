@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contact-page.css">
+    <title>Contact</title>
+</head>
+
+<body>
+
+    <section id="navBarSection"></section>
+
+    <h1 class="pageTitle">Contact</h1>
+
+    <form id="formSection">
+        <section id="emailSection">
+            <input id="emailInput" name="emailInput" type="email" placeholder="e-mailadres" class="inputField"
+                required="">
+        </section>
+        <section id="subjectSection">
+            <input id="subjectInput" name="subjectInput" type="text" placeholder="onderwerp" class="inputField"
+                required="">
+        </section>
+        <section id="messageSection">
+            <textarea id="messageInput" name="messageInput" placeholder="bericht" class="inputField" maxlength="5000"
+                rows="5" required=""></textarea>
+        </section>
+        <input type="submit" id="confirmButton" class="buttonSubmit" value="Verstuur">
+    </form>
+
+    <section id="footerSection"></section>
+
+</body>
+
+<script src="../../build/sitewide-functions/sitewide-functions.js"></script>
+<script src="../../build/contact-page-class/class-contact-page.js"></script>
+<script src="../../build/contact-page/contact-page.js"></script>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool preference selector yo</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <section id="navBarSection"></section>
+    <section id="preferencePanel" style="position: relative; top: 50px; left: 50%; margin-right: -50%; transform: translate(-50%); text-align: center; max-width: fit-content; border-bottom-style:solid; padding: 20px;">
+    <div><h1>Control panel</h1></div>
+    <div style="position: relative; top: 10px;">Your E-mailadress: <span style="color: black; text-decoration: underline;">Dummy@E-mail.tv</span></div>
+    <ul style="text-align: left; list-style: none; position: relative; top: 10px;">
+        <li style="margin: 15px; margin-top: 25px; padding-bottom: 10px;"><label><input type="checkbox" onclick="(document.querySelector(`.wow`).click());"/><span style="text-align: left; list-style: none; position: relative; font-size: larger; font-style: oblique;"> Selection Toggle - None</span> <span style="text-align: left; list-style: none; position: relative; left: 30px; font-size: 80%; color: rgb(50, 50, 50);">Select everything -/- nothing</span></label></li>
+        <li style="margin: 15px;"><label><input type="checkbox" class="wow"/><span style="text-align: left; list-style: none; position: relative;"> Updates & Milestones - Inactive</span> <div style="text-align: left; list-style: none; position: relative; left: 30px; top: 5px; font-size: 80%; color: rgb(50, 50, 50);">-These are mails about new features,<br>cool technology and our achievements!</div></label></li>
+        <li style="margin: 15px;"><label><input type="checkbox" class="wow"/><span style="text-align: left; list-style: none; position: relative;"> Policy & Legal Changes - Inactive</span> <div style="text-align: left; list-style: none; position: relative; left: 30px; top: 5px; font-size: 80%; color: rgb(50, 50, 50);">-These are mails about TOS updates<br>and changes made to our policies</div></label></li>
+        <li style="margin: 15px;"><label><input type="checkbox" class="wow"/><span style="text-align: left; list-style: none; position: relative;"> Discounts & Sales - Inactive</span> <div style="text-align: left; list-style: none; position: relative; left: 30px; top: 5px; font-size: 80%; color: rgb(50, 50, 50);">-These are mails about products with big price cuts<br>and our occasional sidewide sales!</div></label></li>
+        <li style="margin: 15px;"><label><input type="checkbox" class="wow"/><span style="text-align: left; list-style: none; position: relative;"> Popular Products - Inactive</span> <div style="text-align: left; list-style: none; position: relative; left: 30px; top: 5px; font-size: 80%; color: rgb(50, 50, 50);">-These are mails about products we think are awesome,<br> our way of showing whats made by the growing community!</div></label></li>
+        <li style="margin: 15px;"><label><input type="checkbox" class="wow"/><span style="text-align: left; list-style: none; position: relative;"> Other - Inactive</span> <div style="text-align: left; list-style: none; position: relative; left: 30px; top: 5px; font-size: 80%; color: rgb(50, 50, 50);">-This is for anything we just find fun to send,<br>select this for c o n t e n t</div></label></li>
+    </ul>
+</section>
+<section id="Controlbuttons" style="top: 75px; position: relative; left: 50%; margin-right: -50%; transform: translate(-50%); text-align: center; max-width: fit-content;">
+<button class="buttonSmall" style=" background-color: darkred;">--disable--</button>
+<button class="buttonSmall" style=" background-color: rgb(0, 132, 255);">--save-options--</button>
+<button class="buttonSmall" style=" background-color: rgb(155, 155, 155);">--return--</button>
+</section>
+</body>
+
+
+<script src="../../build/storage-handling/storage-handler.js"></script>
+<script src="../../build/sitewide-functions/sitewide-functions.js"></script>
+
+</html>

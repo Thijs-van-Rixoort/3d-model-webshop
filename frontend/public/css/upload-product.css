@@ -1,0 +1,85 @@
+.uploadForm {
+    width: 75%;
+    margin-inline: auto;
+    margin-bottom: 8vh;
+}
+
+.uploadInputs {
+    display: flex;
+    gap: 10px;
+}
+
+.inputSection {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.uploadForm input,
+.uploadForm textarea {
+    margin: 0;
+    min-width: 100%;
+    max-width: 100%;
+
+    box-sizing: border-box;
+}
+
+.dragSection {
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+
+    border-radius: 10px;
+    border: dashed 2px;
+
+    user-select: none;
+
+    transition-duration: .08s;
+}
+
+.dragSection:hover {
+    background-color: #afaaea;
+}
+
+.uploadFormSubmit {
+    margin-top: 10px;
+}
+
+.uploadInput {
+    width: 100%;
+    height: 100%;
+
+    color: transparent;
+
+    cursor: pointer;
+}
+
+.inputSection input::file-selector-button {
+    display: none;
+}
+
+.uploadSentence {
+    position: relative;
+    top: -50%;
+    cursor: pointer;
+}
+
+.dimensions {
+    max-width: 100%;
+    display: flex;
+}
+
+.dimensions>.dimension {
+    min-width: 33.33%;
+    max-width: 33.33%;
+    width: 33.33%;
+}

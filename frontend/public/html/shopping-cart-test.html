@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winkelwagen Verwijder Producten</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        #all {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        #productSection>* {
+            padding: 5px;
+        }
+
+        #totalPrice {
+            font-weight: 600;
+            text-decoration: underline;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section id="navBarSection"></section>
+
+    <section id="all">
+        <h1>Winkelwagen</h1>
+        <section id="productSection"></section>
+        <section id="totalPrice"></section>
+    </section>
+
+    <section id="footerSection"></section>
+
+</body>
+
+<script src="../../build/sitewide-functions/sitewide-functions.js"></script>
+<script src="../../build/shopping-cart-class/shopping-cart-class.js"></script>
+<script src="../../build/winkelwagen/shopping-cart-delete-test.js"></script>
+
+</html>

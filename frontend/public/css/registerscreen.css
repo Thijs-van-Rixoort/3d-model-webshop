@@ -1,0 +1,44 @@
+.center {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.registerForm {
+    display: flex;
+    gap: 25px;
+
+    margin-top: 1vh;
+}
+
+.formSection>.registerInput {
+    width: 100%;
+}
+
+.formSection {
+    box-sizing: border-box;
+
+    width: fit-content;
+}
+
+.requirementSection {
+    user-select: none;
+    margin-top: 5px;
+}
+
+.requirement {
+    margin: 0;
+    font-weight: 250;
+}
+
+.neutral {
+    color: gray;
+}
+
+.succes {
+    color: rgb(0, 200, 0);
+}
+
+.error {
+    color: rgb(200, 0, 0);
+}

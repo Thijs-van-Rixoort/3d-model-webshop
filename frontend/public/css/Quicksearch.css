@@ -1,0 +1,92 @@
+.resultSection {
+    background: white;
+    width: 99%;
+    top: 120%;
+    border-style: solid;
+    border-width: 1px;
+}
+
+#searchFailMessage{
+    margin-left: 35%;
+    transform: translate(35%);
+}
+
+/* Positions the search bar | Needs to be updated in live version*/
+#searchSection {
+    position: absolute; /*Absolute is just a hotfix*/
+    top: 2%;   /*Top left positions it, remove in site integrated version*/
+    left: 5%;
+    margin-right: -5%;
+    transform: translate(-5%);
+    z-index: 1; /*Without this, hover overlays it*/
+}
+
+/* Sets search bar position */
+#searchField {
+    width: 400px;
+    outline: none;
+    border: 2px solid #726DA8;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    padding: 5px;
+}
+
+/*Maybe the box only appearing on field click would be nice*/
+
+#searchButton {
+    position: relative;
+    border: 2px solid #726DA8;
+    background: whitesmoke;
+    padding: 5px; 
+    left: -0.5%;
+    outline: none;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    font-family: sans-serif;
+}
+
+#searchButton:hover{
+    cursor: pointer;
+    background: white;
+}
+
+#searchButton:active{
+    cursor: pointer;
+    background: rgb(214, 223, 238);
+}
+
+
+
+
+/* Makes it so there isn't any extra space under the image */
+#searchImage {
+    vertical-align: bottom
+}
+
+/* Sets common styling for result's text */
+#searchDescription, #searchTitle {
+    position: absolute;
+    text-align: left;
+    line-height: 20px;
+    padding-left: 5%;
+    padding-top: 6%;
+    font-family: sans-serif;
+    font-size: 70%
+}
+
+/* Makes title stand more out and moves it up */
+#searchTitle {
+    padding-top: 1.5%;
+    font-weight: bold;
+    font-size: 100%
+}
+
+/* Styles the message for no results */
+#searchFailMessage {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 70%;
+    flex: auto;
+    justify-content: center;
+    align-items: center;
+}

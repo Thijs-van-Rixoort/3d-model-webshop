@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Upload een Product</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/upload-product.css">
+</head>
+
+<body>
+    <nav id="navBarSection"></nav>
+
+    <header>
+        <h1 class="pageTitle">Product Uploaden</h1>
+    </header>
+
+    <form class="uploadForm" id="uploadForm" method="post">
+        <section class="uploadInputs">
+            <aside class="inputSection left">
+                <input type="text" class="inputField" name="title" id="productTitle" placeholder="titel">
+                <br>
+                <input type="number" class="inputField" step="0.01" name="price" id="productPrice" placeholder="prijs">
+                <br>
+                <textarea class="inputField" name="description" id="productDescription" cols="30" rows="10"
+                    placeholder="beschrijving"></textarea>
+                <br>
+                <section class="dimensions">
+                    <input type="number" class="inputField dimension" name="x" id="dimensionX" placeholder="x">
+                    <input type="number" class="inputField dimension" name="y" id="dimensionY" placeholder="y">
+                    <input type="number" class="inputField dimension" name="z" id="dimensionZ" placeholder="z">
+                </section>
+                <br>
+                <input type="text" class="inputField" name="filetype" id="productFiletype" placeholder="bestandtype">
+                <br>
+                <input type="text" class="inputField" name="filament" id="productFilament" placeholder="filament">
+            </aside>
+
+            <aside class="inputSection right">
+                <section class="dragSection">
+                    <input class="uploadInput" type="file" multiple="multiple" accept="image/*, video/mp4"
+                        name="image[]" id="productImages">
+                    <label class="uploadSentence" for="productImages">Sleep hier je foto's/video's of <strong>klik
+                            hier</strong></label>
+                </section>
+                <section class="dragSection">
+                    <input class="uploadInput" type="file" accept=".obj" name="file" id="productFile" required>
+                    <label class="uploadSentence" for="productFile">Sleep hier je 3D model of <strong>klik
+                            hier</strong></label>
+                </section>
+            </aside>
+        </section>
+
+        <section class="uploadFormSubmit">
+            <input type="submit" class="buttonSubmit" value="Upload Product">
+        </section>
+    </form>
+
+    <section id="footerSection"></section>
+</body>
+
+<script src="../../build/sitewide-functions/sitewide-functions.js"></script>
+<script src="../../build/productclass/class-product.js"></script>
+<script src="../../build/storage-handling/storage-handler.js"></script>
+<script src="../../build/upload-product-page/upload-product.js"></script>
+
+</html>

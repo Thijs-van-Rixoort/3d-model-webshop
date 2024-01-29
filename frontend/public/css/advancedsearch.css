@@ -1,0 +1,173 @@
+.resultSectionAdvanced {
+    border-style: solid;
+    border-width: 1px;
+    width: 150%;
+    top: 120%;
+    margin-top: 2%;
+    margin-right: -17.25%;
+    transform: translate(-17.25%);
+    border-bottom-right-radius: 50px;
+}
+
+#searchFailMessage{
+margin: 1%;
+}
+
+/* Positions the search bar | Needs to be updated in live version*/
+#searchSectionAdvanced {
+    position: absolute;
+    top: 13.25%;   /*Top left positions it, remove in site integrated version*/
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+
+}
+
+/* Sets search bar position */
+#searchFieldAdvanced {
+    width: 400px;
+    margin-bottom: 5%;
+    outline: none;
+    border: 2px solid #726DA8;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 10px;
+}
+
+#searchButtonAdvanced{
+    position: relative;
+    border: 2px solid #726DA8;
+    background: whitesmoke;
+    padding: 10px; 
+    left: -0.5%;
+    outline: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-family: sans-serif;
+}
+
+#searchButtonAdvanced:hover{
+    cursor: pointer;
+    background: white;
+}
+
+#searchButtonAdvanced:active{
+    cursor: pointer;
+    background: rgb(214, 223, 238);
+}
+
+
+/* Makes it so there isn't any extra space under the image */
+#searchImage {
+    vertical-align: bottom
+}
+
+/* Sets common styling for result's text */
+#searchDescription, #searchTitle {
+    position: absolute;
+    text-align: left;
+    line-height: 20px;
+    padding-left: 5%;
+    padding-top: 6%;
+    font-family: sans-serif;
+    font-size: 70%
+}
+
+/* Makes title stand more out and moves it up */
+#searchTitle {
+    padding-top: 1.5%;
+    font-weight: bold;
+    font-size: 100%
+}
+
+/* Styles the message for no results */
+#searchFailMessage {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 70%;
+    flex: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#searchClear {
+  cursor: pointer;
+  position:relative;
+  left: -17.5%;
+}
+
+
+#moreResults{
+  padding-top: 20px;
+  padding-bottom: 10px;
+  
+  position: relative;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%);
+  text-align: center;
+}
+
+
+[category~="pageflicker"]{
+  border: 0px;
+  text-align: center;
+}
+
+[category~="searchfailed"]{
+  border: 0px;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%);
+}
+
+
+
+
+/*recreate this VVV */
+.dropdown {
+    background-color: #ca6dd6;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown:hover {
+    background-color: #b153c4;
+  }
+  
+  #displaySection {
+    position: relative;
+    display: inline-block;
+    left: 80%;
+  }
+
+  #sortSection {
+    position: relative;
+    display: inline-block;
+    left: 65%;
+  }
+  
+  .dropdownClass {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: #ffffff;
+    min-width: 160px;
+    overflow: auto;
+    z-index: 1;
+  }
+
+  .dropElement:hover {
+    background-color: #f0e6f1;
+  }
+  
+  .dropdownClass a {
+    padding: 5px;
+    display: block;
+    border-width: 100px;
+  }
+  
+  #sortSection #sortingdropdown {background-color: #ddd;}
+  .show {display: block;}
